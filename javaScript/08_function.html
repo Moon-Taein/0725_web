@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    console.log("시작");
+
+    myFunc();
+    myFunc("파라미터");
+
+    mySum(15, 25);
+    mySum(44);
+
+    console.log(pow(3, 2));
+    var result = pow(2, 4);
+    console.log(result);
+
+    var result2 = test(13);
+    var result3 = test("ddd");
+    var result4 = test(0);
+    console.log(result2);
+    console.log(result3);
+    console.log(result4);
+
+    // undefined
+    var r = myFunc();
+    console.log(r);
+
+    console.log("끝");
+
+    function myFunc() {
+      // hoisting
+      console.log("호출 확인");
+    }
+
+    function mySum(a, b) {
+      console.log(typeof b);
+      console.log(a + b);
+    }
+
+    function pow(num, p) {
+      return num ** p;
+    }
+
+    function test(num) {
+      if (num) {
+        return num + 1;
+      }
+      return "문자열 반환";
+    }
+  </script>
+</html>

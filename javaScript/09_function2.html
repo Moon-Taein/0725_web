@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // hoisting 안되있음;
+    // console.log(mySum(44, 55));
+
+    // var, let, const
+    // let variable -> local variable에 사용
+    function test() {
+      let a = 10;
+      console.log("지역변수 a: ", a);
+
+      const B = 40;
+      console.log("상수 B: ", B);
+    }
+
+    let f = 300;
+    console.log(f);
+
+    // 함수를 하나의 객체 취급
+    // 변수에 함수를 대입 시켜 줄 수 있다.
+    let mySum = function (a, b) {
+      return a + b;
+    };
+
+    let result = mySum(44, 33);
+    console.log(result);
+
+    // test();
+    // console.log(a);
+  </script>
+</html>

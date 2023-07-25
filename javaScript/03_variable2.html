@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // 초기화 안되면 undefined 반환
+    var notInit;
+    console.log(notInit);
+
+    var myNull = null;
+    console.log(myNull);
+
+    var value;
+
+    // 산술연산시 type matching 해준다
+    value = 10 + "20";
+    console.log(value);
+
+    // error는 안나고 NaN 반환 - 숫자의 형태인데 숫자값은 아닌 변수
+    value = 20 - "asdf";
+    console.log(value);
+
+    value = 20 * "10";
+    console.log(value);
+
+    value = 20 / "10";
+    console.log(value);
+
+    value = 20 % "11";
+    console.log(value);
+  </script>
+</html>

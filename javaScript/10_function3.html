@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // callback 함수
+    function test(f) {
+      // 자기 자신 호출?
+      f();
+    }
+
+    let my = function () {
+      console.log("출력을 하는 함수");
+    };
+
+    test(my);
+
+    // function testObj(o) {
+    //   console.log(o.age);
+    // }
+
+    // let myPerson = {};
+    // myPerson.age = 33;
+
+    // testObj(myPerson);
+  </script>
+</html>
